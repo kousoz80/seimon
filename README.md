@@ -1,7 +1,7 @@
 
 
 # seimon
-本プログラムandroid端末で動作する声紋表示プログラムです 
+本プログラムはandroid端末で動作する声紋表示プログラムです 
 
 ### 画面
   ![enter image description here](https://imgur.com/Z2oBbRb.jpg)
