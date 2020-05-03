@@ -131,7 +131,7 @@ Startup();
 <MoveStep>8</MoveStep>
 <ImageEditCommand></ImageEditCommand>
 <CompilerFileName>javac.exe</CompilerFileName>
-<CompileCommand4>./compile_android Test com example test</CompileCommand4>
+<CompileCommand4>./compile_android Seimon com example seimon</CompileCommand4>
 <RunCommand4>echo no action</RunCommand4>
 <GUIDesignerCommand4>java -jar guidsin.jar -android</GUIDesignerCommand4>
 <ImportFiles4>package com.example.test;
