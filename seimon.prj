@@ -1,0 +1,1067 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<!-- なんちゃってXML version 0.1( ObjectEditor専用 ) -->
+<xobject>
+<ID>project</ID>
+<x0>0</x0>
+<y0>0</y0>
+<width>200</width>
+<height>100</height>
+<ID_maker>32</ID_maker>
+<objectname>seimon</objectname>
+<description>新規のアプリケーション</description>
+<プロパティ>
+<ID>properties</ID>
+<LookandFeel>javax.swing.plaf.metal.MetalLookAndFeel</LookandFeel>
+<MainWinx0>0</MainWinx0>
+<MainWiny0>0</MainWiny0>
+<MainWinWidth>1024</MainWinWidth>
+<MainWinHeight>745</MainWinHeight>
+<MesgWinx0>0</MesgWinx0>
+<MesgWiny0>558</MesgWiny0>
+<MesgWinWidth>1024</MesgWinWidth>
+<MesgWinHeight>186</MesgWinHeight>
+<FileWinx0>80</FileWinx0>
+<FileWiny0>305</FileWiny0>
+<FileWinWidth>578</FileWinWidth>
+<FileWinHeight>262</FileWinHeight>
+<EditWinx0>347</EditWinx0>
+<EditWiny0>0</EditWiny0>
+<EditWinWidth>676</EditWinWidth>
+<EditWinHeight>541</EditWinHeight>
+<PropWinx0>1</PropWinx0>
+<PropWiny0>1</PropWiny0>
+<PropWinWidth>615</PropWinWidth>
+<PropWinHeight>448</PropWinHeight>
+<DividerLocation1>2</DividerLocation1>
+<DividerLocation2>2</DividerLocation2>
+<ToolBarVisible>1</ToolBarVisible>
+<ViewSourceAtCompile>0</ViewSourceAtCompile>
+<NoSourceCreate>0</NoSourceCreate>
+<JavaEditCommand>geany</JavaEditCommand>
+<JavaViewCommand></JavaViewCommand>
+<HelpCommand></HelpCommand>
+<ApplicationType>4</ApplicationType>
+<CompileCommand0>./compile_java</CompileCommand0>
+<RunCommand0>./run_java</RunCommand0>
+<GUIDesignerCommand0>java -jar guidsin.jar -java</GUIDesignerCommand0>
+<ImportFiles0> import java.awt.*;
+ import java.awt.event.*;
+ import javax.swing.*;
+ import javax.swing.event.*;
+ import javax.swing.tree.*;
+ import java.io.*;
+ import java.net.*;
+ import java.util.*;
+import java.awt.geom.*;
+import java.awt.print.*;
+import javax.swing.border.*;
+import javax.swing.filechooser.*;
+ import javax.swing.*;
+ import javax.swing.event.*;
+ import javax.swing.tree.*;
+ import java.io.*;
+ import java.net.*;
+ import java.util.*;
+import java.awt.image.BufferedImage;
+import javax.sound.sampled.*;
+
+class Starter{
+  public static void main( String args[] ){
+    %AppName% ap = new %AppName%();
+    ap.ARGS = args;
+    ap.Start();
+  }
+}
+</ImportFiles0>
+<ProgramStartupCode0> String[] ARGS;
+</ProgramStartupCode0>
+<NativeHelpCommand0></NativeHelpCommand0>
+<CompileCommand1></CompileCommand1>
+<RunCommand1></RunCommand1>
+<GUIDesignerCommand1>java -jar guidsin.jar -applet</GUIDesignerCommand1>
+<ImportFiles1> import java.awt.*;
+ import java.awt.event.*;
+ import java.applet.*;
+ import javax.swing.*;
+ import javax.swing.event.*;
+ import javax.swing.tree.*;
+ import java.io.*;
+ import java.net.*;
+ import java.util.*;
+ public class javatext extends Applet {
+   %AppName% ap;
+   public void init() {
+     ap = new %AppName%();
+     ap.APPLET = this;
+     ap.Start();
+   }
+ }
+</ImportFiles1>
+<ProgramStartupCode1> Applet APPLET;
+</ProgramStartupCode1>
+<NativeHelpCommand1></NativeHelpCommand1>
+<CompileCommand2></CompileCommand2>
+<RunCommand2></RunCommand2>
+<GUIDesignerCommand2></GUIDesignerCommand2>
+<ImportFiles2>#include &lt;stdio.h&gt;
+
+void Startup();
+</ImportFiles2>
+<ProgramStartupCode2>int main(){
+ Startup();
+ %AppName%::Start();
+ }
+</ProgramStartupCode2>
+<NativeHelpCommand2></NativeHelpCommand2>
+<CompileCommand3></CompileCommand3>
+<RunCommand3></RunCommand3>
+<GUIDesignerCommand3>java -jar guidsin.jar -cpp</GUIDesignerCommand3>
+<ImportFiles3>#include &lt;stdio.h&gt;
+#include &lt;sys/stat.h&gt;
+#include &lt;math.h&gt;
+#include &quot;Ekagen.h&quot;
+void Startup();
+</ImportFiles3>
+<ProgramStartupCode3>void Emain(){
+Startup();
+%AppName%::Start();
+}
+</ProgramStartupCode3>
+<NativeHelpCommand3></NativeHelpCommand3>
+<MoveStep>8</MoveStep>
+<ImageEditCommand></ImageEditCommand>
+<CompilerFileName>javac.exe</CompilerFileName>
+<CompileCommand4>./compile_android Test com example test</CompileCommand4>
+<RunCommand4>echo no action</RunCommand4>
+<GUIDesignerCommand4>java -jar guidsin.jar -android</GUIDesignerCommand4>
+<ImportFiles4>package com.example.test;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.View;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.Paint.Style;
+import android.widget.Button;
+import android.view.SurfaceHolder;
+import android.view.SurfaceHolder.Callback;
+import android.view.SurfaceView;
+import android.widget.EditText;
+import android.text.SpannableStringBuilder;
+import android.text.TextWatcher;
+import android.text.Editable;
+import android.graphics.Matrix;
+import android.graphics.Typeface;
+import android.graphics.RectF;
+import android.graphics.BitmapFactory;
+import java.io.*;
+ import java.net.*;
+import java.util.*;
+import java.text.SimpleDateFormat;
+import android.media.MediaPlayer;
+import android.os.Handler;
+import android.content.res.Configuration;
+import android.view.LayoutInflater;
+import android.view.ViewGroup;
+import android.app.Activity;
+import android.graphics.Color;
+
+import android.widget.AbsoluteLayout;
+import android.widget.*;
+import android.view.Gravity;
+import android.view.View.OnClickListener;
+
+import android.hardware.Camera;
+
+import android.media.AudioFormat;
+import android.media.AudioRecord;
+import android.media.MediaRecorder;
+import android.media.AudioTrack;
+import android.media.AudioManager;
+
+public class HelloWorld extends Activity {
+  public void onCreate(Bundle bundle) {
+    super.onCreate(bundle);
+    %AppName% ap = new %AppName%();
+    ap.ACTIVITY = this;
+    ap.Start();
+  }
+}
+</ImportFiles4>
+<ProgramStartupCode4>Activity ACTIVITY;
+</ProgramStartupCode4>
+<NativeHelpCommand4>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;manifest xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+    package=&quot;com.example.test&quot;
+    android:versionCode=&quot;1&quot;
+    android:versionName=&quot;1.0&quot; &gt;
+
+    
+    
+  &lt;uses-permission android:name=&quot;android.permission.CAMERA&quot; /&gt; 
+  &lt;uses-feature android:name=&quot;android.hardware.camera&quot; /&gt; 
+  &lt;uses-feature android:name=&quot;android.hardware.usb.host&quot; /&gt; 
+  &lt;uses-permission android:name=&quot;android.permission.RECORD_AUDIO&quot;/&gt;
+  &lt;uses-permission android:name=&quot;android.permission.WRITE_EXTERNAL_STORAGE&quot; /&gt; 
+  &lt;uses-permission android:name=&quot;android.permission.INTERNET&quot;/&gt;
+
+  &lt;uses-sdk android:minSdkVersion=&quot;3&quot; android:targetSdkVersion=&quot;21&quot;/&gt;
+  
+ 
+    &lt;application android:label=&quot;@string/app_name&quot; &gt;
+        &lt;activity
+            android:name=&quot;HelloWorld&quot;
+            android:label=&quot;@string/app_name&quot; &gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name=&quot;android.intent.action.MAIN&quot; /&gt;
+
+                &lt;category android:name=&quot;android.intent.category.LAUNCHER&quot; /&gt;
+            &lt;/intent-filter&gt;
+        &lt;/activity&gt;
+    &lt;/application&gt;
+
+&lt;/manifest&gt;
+</NativeHelpCommand4>
+<HtmlEditCommand></HtmlEditCommand>
+<CompileCommand5></CompileCommand5>
+<RunCommand5></RunCommand5>
+<GUIDesignerCommand5></GUIDesignerCommand5>
+<ImportFiles5></ImportFiles5>
+<ProgramStartupCode5>gosub @_PSTART
+end
+</ProgramStartupCode5>
+<NativeHelpCommand5></NativeHelpCommand5>
+<NoOptimizePin>0</NoOptimizePin>
+<CompileCommand6>./compile_c</CompileCommand6>
+<RunCommand6>./run_c</RunCommand6>
+<GUIDesignerCommand6></GUIDesignerCommand6>
+<ImportFiles6>#include &lt;setjmp.h&gt;
+#include &lt;pthread.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;stdarg.h&gt;
+#include &lt;string.h&gt;
+#include &lt;unistd.h&gt;
+#include &lt;sys/stat.h&gt;
+#include &lt;fcntl.h&gt;
+#include &lt;math.h&gt;
+#include &lt;sys/socket.h&gt;
+#include &lt;netinet/in.h&gt;
+#include &lt;arpa/inet.h&gt;
+#include &lt;netdb.h&gt;
+
+#include &lt;X11/Xlib.h&gt;
+#include &lt;X11/Xutil.h&gt;
+#include &lt;X11/Xlocale.h&gt; /* ロケール用ヘッダーファイル */
+#include &lt;X11/xpm.h&gt;
+#include &lt;sys/time.h&gt;
+#include &lt;signal.h&gt;
+#include &lt;unistd.h&gt;
+#include &lt;termios.h&gt;
+#include &lt;errno.h&gt;
+</ImportFiles6>
+<ProgramStartupCode6>int ARGC; char** ARGV;
+int main( int argc, char** argv ){
+  ARGC=argc;
+  ARGV=argv;
+  _PSTART();
+}
+</ProgramStartupCode6>
+<NativeHelpCommand6></NativeHelpCommand6>
+<CompileCommand7></CompileCommand7>
+<RunCommand7>./run_startx</RunCommand7>
+<GUIDesignerCommand7>java -jar guidsin.jar -ore</GUIDesignerCommand7>
+<ImportFiles7></ImportFiles7>
+<ProgramStartupCode7>main:
+  _INIT_STATES
+  goto _PSTART
+</ProgramStartupCode7>
+<NativeHelpCommand7></NativeHelpCommand7>
+<IDF_LocalVariable5>%</IDF_LocalVariable5>
+<IDF_LocalVariable7>\</IDF_LocalVariable7>
+</プロパティ>
+<codeclip>
+<ID>_CSTART</ID>
+<x0>18</x0>
+<y0>33</y0>
+<width>80</width>
+<height>24</height>
+<codetext>Activity ACTIVITY;
+</codetext>
+</codeclip>
+<pin>
+<ID>_PSTART</ID>
+<x0>10</x0>
+<y0>87</y0>
+<width>55</width>
+<height>24</height>
+<text>Start()</text>
+<px>50</px>
+<py>50</py>
+</pin>
+<operation>
+<ID>_O1</ID>
+<state1>_SINIT</state1>
+<state2>_SINIT</state2>
+<x0>449</x0>
+<y0>177</y0>
+<width>132</width>
+<height>49</height>
+<inconnectx0>0</inconnectx0>
+<inconnecty0>40</inconnecty0>
+<outconnectx0>0</outconnectx0>
+<outconnecty0>40</outconnecty0>
+<inpintext>in(Canvas g)</inpintext>
+<inpinx0>0</inpinx0>
+<inpiny0>31</inpiny0>
+<inpinwidth>88</inpinwidth>
+<inpinheight>19</inpinheight>
+<outpintext>out()</outpintext>
+<outpinx0>90</outpinx0>
+<outpiny0>40</outpiny0>
+<outpinwidth>40</outpinwidth>
+<outpinheight>20</outpinheight>
+<inpinlinkcount>1</inpinlinkcount>
+<description></description>
+<codetext>// 描画する
+
+
+if( is_recording ) return;
+float width = (float)view.getWidth();
+float height = (float)view.getHeight();
+float ex  = width / (SOUND_SIZE/NN*2);
+float ey  = height / (NN/2);
+
+for( int i = 0; i &lt; SOUND_SIZE/NN*2; i++ ){
+  for( int j = 0; j &lt; NN/2; j++ ){
+    double v =  sound_gain * Math.log( display[i][j] + 1e-8 ) + sound_offset;
+    if( v &gt; 255.0 ) v = 255.0;
+    if( v &lt; 0.0 ) v = 0.0;
+    int c = (int)v;
+    paint.setColor(Color.rgb( c, c, c));
+    float x = i * ex;
+    float y = height - j * ey - ey;
+    g.drawRect( x, y, x + ex, y + ey , paint);
+  }
+}
+</codetext>
+</operation>
+<relation>
+<ID>_R3</ID>
+<pin1name>_PSTART</pin1name>
+<pin2name>_A2(_Pstart)</pin2name>
+</relation>
+<relation>
+<ID>_R4</ID>
+<pin1name>_A2(_PPimage)</pin1name>
+<pin2name>_O1</pin2name>
+</relation>
+<operation>
+<ID>_O6</ID>
+<state1>_SINIT</state1>
+<state2>_SINIT</state2>
+<x0>462</x0>
+<y0>241</y0>
+<width>118</width>
+<height>48</height>
+<inconnectx0>0</inconnectx0>
+<inconnecty0>40</inconnecty0>
+<outconnectx0>0</outconnectx0>
+<outconnecty0>40</outconnecty0>
+<inpintext>in()</inpintext>
+<inpinx0>0</inpinx0>
+<inpiny0>28</inpiny0>
+<inpinwidth>40</inpinwidth>
+<inpinheight>20</inpinheight>
+<outpintext>out()</outpintext>
+<outpinx0>90</outpinx0>
+<outpiny0>40</outpiny0>
+<outpinwidth>40</outpinwidth>
+<outpinheight>20</outpinheight>
+<inpinlinkcount>1</inpinlinkcount>
+<description></description>
+<codetext>System.exit(0);
+</codetext>
+</operation>
+<relation>
+<ID>_R7</ID>
+<pin1name>_A2(_PAexit)</pin1name>
+<pin2name>_O6</pin2name>
+</relation>
+<operation>
+<ID>_O8</ID>
+<state1>_SINIT</state1>
+<state2>_SINIT</state2>
+<x0>599</x0>
+<y0>195</y0>
+<width>108</width>
+<height>53</height>
+<inconnectx0>0</inconnectx0>
+<inconnecty0>40</inconnecty0>
+<outconnectx0>0</outconnectx0>
+<outconnecty0>40</outconnecty0>
+<inpintext>in()</inpintext>
+<inpinx0>0</inpinx0>
+<inpiny0>29</inpiny0>
+<inpinwidth>33</inpinwidth>
+<inpinheight>24</inpinheight>
+<outpintext>out()</outpintext>
+<outpinx0>90</outpinx0>
+<outpiny0>40</outpiny0>
+<outpinwidth>40</outpinwidth>
+<outpinheight>20</outpinheight>
+<inpinlinkcount>1</inpinlinkcount>
+<description></description>
+<codetext>// 録音＆DFT
+
+
+
+  int i, j, k, n, lmx, lix, scl, arg;
+  double c, s, tx, ty;
+  handler.post(new Runnable() {
+    @Override
+    public void run() {
+      is_recording = true;
+      audioRec.startRecording();	// 録音開始
+      audioRec.read( buffer, 0, SOUND_SIZE ); // 録音データを読み込む(SOUND_SIZEは配列要素の数)
+      audioRec.stop();	// 録音終了
+      for ( int offset = 0, i = 0; offset &lt; SOUND_SIZE-NN; offset += NN/2, i++ ){
+        dft( buffer, offset, spector );
+        for( int j = 0; j &lt; NN/2; j++ ){
+          display[i][j] = spector[j];
+        }
+      }
+      is_recording = false;
+      view.invalidate();
+    }
+  });
+
+</codetext>
+</operation>
+<relation>
+<ID>_R9</ID>
+<pin1name>_A2(_PArecord)</pin1name>
+<pin2name>_O8</pin2name>
+</relation>
+<codeclip>
+<ID>_C10</ID>
+<x0>132</x0>
+<y0>1</y0>
+<width>294</width>
+<height>84</height>
+<codetext>// 主要変数
+static final int NN = 256;
+static final int log2NN = 8;
+static final int SAMPLING_RATE = 8000;
+static final int SOUND_SIZE = 16128;
+
+
+
+View view;
+Paint paint;
+Handler handler;
+AudioRecord audioRec;
+boolean is_recording = true;
+short buffer[] = new short[SOUND_SIZE];
+double wave[] = new double[SOUND_SIZE];
+double sin[] = new double[NN];
+double cos[] = new double[NN];
+double x[] = new double[NN];
+double y[] = new double[NN];
+double window[] = new double[NN];
+double spector[] = new double[NN];
+double display[][] = new double[SOUND_SIZE/NN*2][NN/2];
+double sound_gain = 10;
+double sound_offset = 30;
+TextView gain_disp;
+TextView offset_disp;
+</codetext>
+</codeclip>
+<operation>
+<ID>_O17</ID>
+<state1>_SINIT</state1>
+<state2>_SINIT</state2>
+<x0>580</x0>
+<y0>116</y0>
+<width>109</width>
+<height>51</height>
+<inconnectx0>0</inconnectx0>
+<inconnecty0>40</inconnecty0>
+<outconnectx0>0</outconnectx0>
+<outconnecty0>40</outconnecty0>
+<inpintext>in(View v)</inpintext>
+<inpinx0>0</inpinx0>
+<inpiny0>29</inpiny0>
+<inpinwidth>73</inpinwidth>
+<inpinheight>22</inpinheight>
+<outpintext>out()</outpintext>
+<outpinx0>90</outpinx0>
+<outpiny0>40</outpiny0>
+<outpinwidth>40</outpinwidth>
+<outpinheight>20</outpinheight>
+<inpinlinkcount>1</inpinlinkcount>
+<description></description>
+<codetext>view = v;
+</codetext>
+</operation>
+<relation>
+<ID>_R18</ID>
+<pin1name>_A2(_Pimage)</pin1name>
+<pin2name>_O17</pin2name>
+</relation>
+<operation>
+<ID>_O19</ID>
+<state1>_SINIT</state1>
+<state2>_SINIT</state2>
+<x0>457</x0>
+<y0>102</y0>
+<width>94</width>
+<height>47</height>
+<inconnectx0>0</inconnectx0>
+<inconnecty0>40</inconnecty0>
+<outconnectx0>0</outconnectx0>
+<outconnecty0>40</outconnecty0>
+<inpintext>in()</inpintext>
+<inpinx0>0</inpinx0>
+<inpiny0>26</inpiny0>
+<inpinwidth>40</inpinwidth>
+<inpinheight>20</inpinheight>
+<outpintext>out()</outpintext>
+<outpinx0>90</outpinx0>
+<outpiny0>40</outpiny0>
+<outpinwidth>40</outpinwidth>
+<outpinheight>20</outpinheight>
+<inpinlinkcount>1</inpinlinkcount>
+<description></description>
+<codetext>// 準備
+
+
+try{
+  dbg = new FileWriter(&quot;/sdcard/debug.txt&quot;);
+} catch(Exception e){}
+
+
+
+//dprint(&quot;xx=&quot;+SOUND_SIZE/NN*2+&quot;\n&quot;);
+//dprint(&quot;yy=&quot;+NN/2+&quot;\n&quot;);
+//try{
+//dbg.close();
+//}catch(Exception e){}
+
+
+for( int i = 0; i &lt; NN; i++ ){
+  sin[i] = Math.sin((double)i * 6.2832 / (double)NN );
+  cos[i] = Math.cos((double)i * 6.2832 / (double)NN );
+  window[i] =0.5*(1.-Math.cos(3.1416*(double)i/(double)NN)); //Hanning Window 
+}
+paint = new Paint();
+handler = new Handler();
+     audioRec = new AudioRecord(
+                     MediaRecorder.AudioSource.MIC,
+                     SAMPLING_RATE,
+                     AudioFormat.CHANNEL_IN_MONO,
+                     AudioFormat.ENCODING_PCM_16BIT,
+                     SOUND_SIZE * 8
+     );
+     is_recording = true;
+</codetext>
+</operation>
+<relation>
+<ID>_R20</ID>
+<pin1name>_A2(_Pstart)</pin1name>
+<pin2name>_O19</pin2name>
+</relation>
+<codeclip>
+<ID>_C21</ID>
+<x0>440</x0>
+<y0>27</y0>
+<width>350</width>
+<height>37</height>
+<codetext>// DFT
+public void dft( short in[], int offset, double[] buf ){
+   int i, j, k;
+   double tx, ty;
+
+  // 入力処理
+  for( i =0 ; i &lt; NN; i++ ){
+    buf[i] = (double)in[i + offset]  * window[i];
+  }
+
+  // dft
+  for( i=0; i&lt;NN/2; i++){
+    tx = ty = 0.0;
+    for( j=0; j&lt;NN; j++){
+      k = (i * j)&amp;(NN-1); 
+      tx += buf[j]*cos[k];
+      ty += buf[j]*sin[k];
+    }
+    x[i] = tx;
+    y[i] = ty;
+  }
+
+  // 出力処理
+  for( i = 0; i &lt; NN/2; i++ ){
+     buf[i] = x[i] * x[i]  + y[i] * y[i];
+  }
+  
+}
+</codetext>
+</codeclip>
+<codeclip>
+<ID>_C22</ID>
+<x0>81</x0>
+<y0>421</y0>
+<width>229</width>
+<height>182</height>
+<codetext>// デバッグ表示
+FileWriter dbg;
+boolean debug_mode = true;
+public void dprint(String s){
+  if(debug_mode){
+    try{
+      dbg.write(s);
+      dbg.flush();
+    } catch(Exception e){}
+  }
+}
+</codetext>
+</codeclip>
+<operation>
+<ID>_O24</ID>
+<state1>_SINIT</state1>
+<state2>_SINIT</state2>
+<x0>571</x0>
+<y0>386</y0>
+<width>125</width>
+<height>46</height>
+<inconnectx0>0</inconnectx0>
+<inconnecty0>40</inconnecty0>
+<outconnectx0>0</outconnectx0>
+<outconnecty0>40</outconnecty0>
+<inpintext>in(int val)</inpintext>
+<inpinx0>0</inpinx0>
+<inpiny0>28</inpiny0>
+<inpinwidth>70</inpinwidth>
+<inpinheight>19</inpinheight>
+<outpintext>out()</outpintext>
+<outpinx0>90</outpinx0>
+<outpiny0>40</outpiny0>
+<outpinwidth>40</outpinwidth>
+<outpinheight>20</outpinheight>
+<inpinlinkcount>1</inpinlinkcount>
+<description></description>
+<codetext>// 変更を反映する
+
+
+sound_gain = (double)val*20.0/100.0;
+gain_disp.setText(&quot;gain:&quot;+(int)sound_gain);
+gain_disp.invalidate();
+view.invalidate();
+</codetext>
+</operation>
+<relation>
+<ID>_R25</ID>
+<pin1name>_A2(_PAgain)</pin1name>
+<pin2name>_O24</pin2name>
+</relation>
+<operation>
+<ID>_O26</ID>
+<state1>_SINIT</state1>
+<state2>_SINIT</state2>
+<x0>409</x0>
+<y0>413</y0>
+<width>122</width>
+<height>49</height>
+<inconnectx0>0</inconnectx0>
+<inconnecty0>40</inconnecty0>
+<outconnectx0>0</outconnectx0>
+<outconnecty0>40</outconnecty0>
+<inpintext>in(int val)</inpintext>
+<inpinx0>0</inpinx0>
+<inpiny0>28</inpiny0>
+<inpinwidth>74</inpinwidth>
+<inpinheight>22</inpinheight>
+<outpintext>out()</outpintext>
+<outpinx0>90</outpinx0>
+<outpiny0>40</outpiny0>
+<outpinwidth>40</outpinwidth>
+<outpinheight>20</outpinheight>
+<inpinlinkcount>1</inpinlinkcount>
+<description></description>
+<codetext>// 変更を反映する
+
+
+sound_offset = (double)val*4 - 200.;
+offset_disp.setText(&quot;offset:&quot;+(int)sound_offset);
+offset_disp.invalidate();
+view.invalidate();
+</codetext>
+</operation>
+<relation>
+<ID>_R27</ID>
+<pin1name>_A2(_PAoffset)</pin1name>
+<pin2name>_O26</pin2name>
+</relation>
+<operation>
+<ID>_O28</ID>
+<state1>_SINIT</state1>
+<state2>_SINIT</state2>
+<x0>610</x0>
+<y0>287</y0>
+<width>129</width>
+<height>50</height>
+<inconnectx0>0</inconnectx0>
+<inconnecty0>40</inconnecty0>
+<outconnectx0>0</outconnectx0>
+<outconnecty0>40</outconnecty0>
+<inpintext>in(TextView t)</inpintext>
+<inpinx0>0</inpinx0>
+<inpiny0>30</inpiny0>
+<inpinwidth>96</inpinwidth>
+<inpinheight>20</inpinheight>
+<outpintext>out()</outpintext>
+<outpinx0>90</outpinx0>
+<outpiny0>40</outpiny0>
+<outpinwidth>40</outpinwidth>
+<outpinheight>20</outpinheight>
+<inpinlinkcount>1</inpinlinkcount>
+<description></description>
+<codetext>gain_disp = t;
+</codetext>
+</operation>
+<relation>
+<ID>_R29</ID>
+<pin1name>_A2(_Pgain_disp)</pin1name>
+<pin2name>_O28</pin2name>
+</relation>
+<operation>
+<ID>_O30</ID>
+<state1>_SINIT</state1>
+<state2>_SINIT</state2>
+<x0>438</x0>
+<y0>317</y0>
+<width>130</width>
+<height>51</height>
+<inconnectx0>0</inconnectx0>
+<inconnecty0>40</inconnecty0>
+<outconnectx0>0</outconnectx0>
+<outconnecty0>40</outconnecty0>
+<inpintext>in(TextView t)</inpintext>
+<inpinx0>0</inpinx0>
+<inpiny0>30</inpiny0>
+<inpinwidth>96</inpinwidth>
+<inpinheight>20</inpinheight>
+<outpintext>out()</outpintext>
+<outpinx0>90</outpinx0>
+<outpiny0>40</outpiny0>
+<outpinwidth>40</outpinwidth>
+<outpinheight>20</outpinheight>
+<inpinlinkcount>1</inpinlinkcount>
+<description></description>
+<codetext>offset_disp = t;
+</codetext>
+</operation>
+<relation>
+<ID>_R31</ID>
+<pin1name>_A2(_Poffset_disp)</pin1name>
+<pin2name>_O30</pin2name>
+</relation>
+<aobject>
+<ID>_A2</ID>
+<x0>100</x0>
+<y0>100</y0>
+<width>280</width>
+<objectname>GUI</objectname>
+<description>GUIオブジェクト
+</description>
+<state>
+<ID>_SINIT</ID>
+<x0>0</x0>
+<y0>40</y0>
+<width>70</width>
+<height>40</height>
+<text>  InitState</text>
+<isinitstate>1</isinitstate>
+</state>
+<pin>
+<ID>_Pstart</ID>
+<x0>400</x0>
+<y0>100</y0>
+<width>80</width>
+<height>26</height>
+<text>Start()</text>
+<px>0</px>
+<py>36</py>
+</pin>
+<pin>
+<ID>_PGUIout</ID>
+<x0>0</x0>
+<y0>84</y0>
+<width>180</width>
+<height>26</height>
+<text>GUI_created(AbsoluteLayout l)</text>
+<px>0</px>
+<py>54</py>
+</pin>
+<action>
+<ID>_Astart</ID>
+<comp1name>_Pstart</comp1name>
+<comp2name>_Ocreate</comp2name>
+</action>
+<operation>
+<ID>_Ocreate</ID>
+<state1>_SINIT</state1>
+<state2>_SINIT</state2>
+<x0>220</x0>
+<y0>40</y0>
+<width>130</width>
+<height>64</height>
+<inconnectx0>0</inconnectx0>
+<inconnecty0>30</inconnecty0>
+<outconnectx0>0</outconnectx0>
+<outconnecty0>30</outconnecty0>
+<inpintext>in()</inpintext>
+<inpinx0>90</inpinx0>
+<inpiny0>43</inpiny0>
+<inpinwidth>40</inpinwidth>
+<inpinheight>20</inpinheight>
+<outpintext>out()</outpintext>
+<outpinx0>90</outpinx0>
+<outpiny0>40</outpiny0>
+<outpinwidth>40</outpinwidth>
+<outpinheight>20</outpinheight>
+<inpinlinkcount>1</inpinlinkcount>
+<description></description>
+<codetext>// GUIを作成する
+XGUI x = new XGUI();
+
+</codetext>
+</operation>
+<pin>
+<ID>_Pimage</ID>
+<x0>0</x0>
+<y0>110</y0>
+<width>200</width>
+<height>26</height>
+<text>image_created(TextView t)</text>
+<px>0</px>
+<py>72</py>
+</pin>
+<pin>
+<ID>_PPimage</ID>
+<x0>0</x0>
+<y0>138</y0>
+<width>200</width>
+<height>26</height>
+<text>image_paint(Canvas g)</text>
+<px>0</px>
+<py>90</py>
+</pin>
+<pin>
+<ID>_PArecord</ID>
+<x0>0</x0>
+<y0>166</y0>
+<width>200</width>
+<height>26</height>
+<text>record_clicked()</text>
+<px>0</px>
+<py>108</py>
+</pin>
+<pin>
+<ID>_PAexit</ID>
+<x0>0</x0>
+<y0>194</y0>
+<width>200</width>
+<height>26</height>
+<text>exit_clicked()</text>
+<px>0</px>
+<py>126</py>
+</pin>
+<pin>
+<ID>_Pgain_disp</ID>
+<x0>0</x0>
+<y0>222</y0>
+<width>200</width>
+<height>26</height>
+<text>gain_disp_created(TextView t)</text>
+<px>0</px>
+<py>144</py>
+</pin>
+<pin>
+<ID>_Poffset_disp</ID>
+<x0>0</x0>
+<y0>250</y0>
+<width>200</width>
+<height>26</height>
+<text>offset_disp_created(TextView t)</text>
+<px>0</px>
+<py>162</py>
+</pin>
+<pin>
+<ID>_PAgain</ID>
+<x0>0</x0>
+<y0>278</y0>
+<width>200</width>
+<height>26</height>
+<text>gain_changed(int val)</text>
+<px>0</px>
+<py>180</py>
+</pin>
+<pin>
+<ID>_PAoffset</ID>
+<x0>0</x0>
+<y0>306</y0>
+<width>200</width>
+<height>26</height>
+<text>offset_changed(int val)</text>
+<px>0</px>
+<py>198</py>
+</pin>
+<codeclip>
+<ID>_CXSTART</ID>
+<x0>0</x0>
+<y0>0</y0>
+<width>300</width>
+<height>26</height>
+<codetext> class XGUI{
+image Iimage;
+ class image extends TextView{
+ image(){
+ super(ACTIVITY);
+ setGravity(Gravity.RIGHT|Gravity.CENTER);
+ setPadding(1, 1, 1, 1);
+ setTextSize( 12f ); setTextColor( Color.rgb( 255, 255, 255 ));
+ setBackgroundColor( Color.rgb( 0, 0, 0 ));
+ setText( &quot;&quot; );
+ image_created( this );
+}
+ protected void onDraw(Canvas g){ super.onDraw( g ); image_paint(g); }
+}
+record Irecord;
+ class record extends Button{
+ record(){
+ super(ACTIVITY);
+ setGravity(Gravity.CENTER|Gravity.CENTER);
+ setPadding(1, 1, 1, 1);
+ setTextSize( 16f ); setTextColor( Color.rgb( 51, 51, 51 ));
+ setBackgroundColor( Color.rgb( 192, 192, 192 ));
+ setText( &quot;REC&quot; );
+ setOnClickListener(new Button.OnClickListener(){ public void onClick(View v) {record_clicked();}} );
+}
+}
+exit Iexit;
+ class exit extends Button{
+ exit(){
+ super(ACTIVITY);
+ setGravity(Gravity.CENTER|Gravity.CENTER);
+ setPadding(1, 1, 1, 1);
+ setTextSize( 16f ); setTextColor( Color.rgb( 51, 51, 51 ));
+ setBackgroundColor( Color.rgb( 192, 192, 192 ));
+ setText( &quot;exit&quot; );
+ setOnClickListener(new Button.OnClickListener(){ public void onClick(View v) {exit_clicked();}} );
+}
+}
+gain_disp Igain_disp;
+ class gain_disp extends TextView{
+ gain_disp(){
+ super(ACTIVITY);
+ setGravity(Gravity.CENTER|Gravity.CENTER);
+ setPadding(1, 1, 1, 1);
+ setTextSize( 12f ); setTextColor( Color.rgb( 51, 51, 51 ));
+ setBackgroundColor( Color.rgb( 192, 192, 192 ));
+ setText( &quot;gain&quot; );
+ gain_disp_created( this );
+}
+}
+offset_disp Ioffset_disp;
+ class offset_disp extends TextView{
+ offset_disp(){
+ super(ACTIVITY);
+ setGravity(Gravity.CENTER|Gravity.CENTER);
+ setPadding(1, 1, 1, 1);
+ setTextSize( 12f ); setTextColor( Color.rgb( 51, 51, 51 ));
+ setBackgroundColor( Color.rgb( 192, 192, 192 ));
+ setText( &quot;offset&quot; );
+ offset_disp_created( this );
+}
+}
+gain Igain;
+ class gain extends SeekBar{
+ gain(){
+ super(ACTIVITY);
+ setBackgroundColor( Color.rgb( 238, 238, 238 ));
+ setProgress( 0 );
+ setMax( 100 );
+ setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+ public void onStopTrackingTouch(SeekBar seekBar) {}
+ public void onStartTrackingTouch(SeekBar seekBar) {}
+ public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) { gain_changed( progress ); }
+ });
+}
+}
+offset Ioffset;
+ class offset extends SeekBar{
+ offset(){
+ super(ACTIVITY);
+ setBackgroundColor( Color.rgb( 238, 238, 238 ));
+ setProgress( 0 );
+ setMax( 100 );
+ setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+ public void onStopTrackingTouch(SeekBar seekBar) {}
+ public void onStartTrackingTouch(SeekBar seekBar) {}
+ public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) { offset_changed( progress ); }
+ });
+}
+}
+ XGUI(){
+ AbsoluteLayout layout=new AbsoluteLayout(ACTIVITY);
+layout.setBackgroundColor(Color.rgb( 255, 255, 255));
+ACTIVITY.setContentView(layout);
+ACTIVITY.setTitle(&quot;声紋表示&quot;);
+ Iimage = new image();
+ Iimage.setLayoutParams( new AbsoluteLayout.LayoutParams( 603,385,0,9 ) );
+ layout.addView( Iimage );
+ Irecord = new record();
+ Irecord.setLayoutParams( new AbsoluteLayout.LayoutParams( 196,49,60,407 ) );
+ layout.addView( Irecord );
+ Iexit = new exit();
+ Iexit.setLayoutParams( new AbsoluteLayout.LayoutParams( 196,49,330,401 ) );
+ layout.addView( Iexit );
+ Igain_disp = new gain_disp();
+ Igain_disp.setLayoutParams( new AbsoluteLayout.LayoutParams( 141,40,1,468 ) );
+ layout.addView( Igain_disp );
+ Ioffset_disp = new offset_disp();
+ Ioffset_disp.setLayoutParams( new AbsoluteLayout.LayoutParams( 141,36,0,516 ) );
+ layout.addView( Ioffset_disp );
+ Igain = new gain();
+ Igain.setLayoutParams( new AbsoluteLayout.LayoutParams( 375,36,148,468 ) );
+ layout.addView( Igain );
+ Ioffset = new offset();
+ Ioffset.setLayoutParams( new AbsoluteLayout.LayoutParams( 378,35,147,520 ) );
+ layout.addView( Ioffset );
+ GUI_created( layout );
+}
+}
+</codetext>
+</codeclip>
+<ID_maker>28</ID_maker>
+<height>220</height>
+<レイアウト>声紋表示
+442
+423
+255
+255
+255
+xxscale=1.4
+LABEL;image;null;0;7;431;275;255;255;255;0;0;0;Dialog;12;null;4;0;1;1;1;TextView;
+BUTTON;record;REC;43;291;140;35;51;51;51;192;192;192;Dialog;16;null;0;0;1;0;1;Button;
+BUTTON;exit;exit;236;287;140;35;51;51;51;192;192;192;Dialog;16;null;0;0;1;0;1;Button;
+LABEL;gain_disp;gain;1;335;101;29;51;51;51;192;192;192;Dialog;12;null;0;0;1;1;0;TextView;
+LABEL;offset_disp;offset;0;369;101;26;51;51;51;192;192;192;Dialog;12;null;0;0;1;1;0;TextView;
+HSLIDER;gain;0;100;106;335;268;26;163;184;204;238;238;238;1;0;1;SeekBar;
+HSLIDER;offset;0;100;105;372;270;25;163;184;204;238;238;238;1;0;1;SeekBar;
+</レイアウト>
+</aobject>
+</xobject>
